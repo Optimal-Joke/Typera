@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		375C58C3260E9FEC00A0865A /* TyperaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C58C2260E9FEC00A0865A /* TyperaApp.swift */; };
+		375C58C5260E9FEC00A0865A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C58C4260E9FEC00A0865A /* ContentView.swift */; };
+		375C58C7260E9FEE00A0865A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375C58C6260E9FEE00A0865A /* Assets.xcassets */; };
+		375C58CA260E9FEE00A0865A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375C58C9260E9FEE00A0865A /* Preview Assets.xcassets */; };
+		377EDD46264C47B80094D637 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377EDD45264C47B80094D637 /* Language.swift */; };
+		3787B3F026DE8778007F5162 /* testdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 3787B3EF26DE8778007F5162 /* testdata.json */; };
+		37B704D2260EA22F008BCD78 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B704D1260EA22F008BCD78 /* Word.swift */; };
+		37B704D5260EA35E008BCD78 /* DocParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B704D4260EA35E008BCD78 /* DocParse.swift */; };
+		37CF6E1C26446A6000DB7447 /* OEDWordFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF6E1B26446A6000DB7447 /* OEDWordFetch.swift */; };
+		37CF6E252644A0B600DB7447 /* MWWordFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF6E242644A0B500DB7447 /* MWWordFetch.swift */; };
+		37CF6E302644ABB600DB7447 /* MainWordFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF6E2F2644ABB600DB7447 /* MainWordFetch.swift */; };
+		37CF6E342644AEBA00DB7447 /* WordFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF6E332644AEBA00DB7447 /* WordFetcher.swift */; };
+		37CF6E392645BB6800DB7447 /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF6E382645BB6800DB7447 /* DataSources.swift */; };
+		37CF6E452645C6F400DB7447 /* MWEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF6E442645C6F400DB7447 /* MWEntry.swift */; };
+		37ECC2A82648C6E5008FB1C0 /* TyperaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECC2A72648C6E5008FB1C0 /* TyperaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37ECC2AA2648C6E5008FB1C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375C58B7260E9FEC00A0865A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375C58BE260E9FEC00A0865A;
+			remoteInfo = Typera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		375C58BF260E9FEC00A0865A /* Typera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Typera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		375C58C2260E9FEC00A0865A /* TyperaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyperaApp.swift; sourceTree = "<group>"; };
+		375C58C4260E9FEC00A0865A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		375C58C6260E9FEE00A0865A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		375C58C9260E9FEE00A0865A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		375C58CB260E9FEE00A0865A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375C58CC260E9FEE00A0865A /* Typera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Typera.entitlements; sourceTree = "<group>"; };
+		377EDD45264C47B80094D637 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		3787B3EF26DE8778007F5162 /* testdata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; };
+		37B704D1260EA22F008BCD78 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		37B704D4260EA35E008BCD78 /* DocParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocParse.swift; sourceTree = "<group>"; };
+		37CF6E1B26446A6000DB7447 /* OEDWordFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OEDWordFetch.swift; sourceTree = "<group>"; };
+		37CF6E1E2644958600DB7447 /* Testing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Testing.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		37CF6E242644A0B500DB7447 /* MWWordFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MWWordFetch.swift; path = Typera/DataFetching/MerriamWebster/MWWordFetch.swift; sourceTree = SOURCE_ROOT; };
+		37CF6E2F2644ABB600DB7447 /* MainWordFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWordFetch.swift; sourceTree = "<group>"; };
+		37CF6E332644AEBA00DB7447 /* WordFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFetcher.swift; sourceTree = "<group>"; };
+		37CF6E382645BB6800DB7447 /* DataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
+		37CF6E442645C6F400DB7447 /* MWEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWEntry.swift; sourceTree = "<group>"; };
+		37ECC2A52648C6E5008FB1C0 /* TyperaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TyperaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ECC2A72648C6E5008FB1C0 /* TyperaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyperaTests.swift; sourceTree = "<group>"; };
+		37ECC2A92648C6E5008FB1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		375C58BC260E9FEC00A0865A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37ECC2A22648C6E5008FB1C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		375C58B6260E9FEC00A0865A = {
+			isa = PBXGroup;
+			children = (
+				375C58C1260E9FEC00A0865A /* Typera */,
+				37ECC2A62648C6E5008FB1C0 /* TyperaTests */,
+				375C58C0260E9FEC00A0865A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		375C58C0260E9FEC00A0865A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				375C58BF260E9FEC00A0865A /* Typera.app */,
+				37ECC2A52648C6E5008FB1C0 /* TyperaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		375C58C1260E9FEC00A0865A /* Typera */ = {
+			isa = PBXGroup;
+			children = (
+				37CF6E1E2644958600DB7447 /* Testing.playground */,
+				375C58D3260EA02600A0865A /* Document Parsing */,
+				375C58C2260E9FEC00A0865A /* TyperaApp.swift */,
+				37CF6E222644A04900DB7447 /* DataFetching */,
+				375C58C4260E9FEC00A0865A /* ContentView.swift */,
+				375C58C6260E9FEE00A0865A /* Assets.xcassets */,
+				375C58CB260E9FEE00A0865A /* Info.plist */,
+				375C58CC260E9FEE00A0865A /* Typera.entitlements */,
+				375C58C8260E9FEE00A0865A /* Preview Content */,
+				3787B3EF26DE8778007F5162 /* testdata.json */,
+			);
+			path = Typera;
+			sourceTree = "<group>";
+		};
+		375C58C8260E9FEE00A0865A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				375C58C9260E9FEE00A0865A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		375C58D3260EA02600A0865A /* Document Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				37B704D1260EA22F008BCD78 /* Word.swift */,
+				37B704D4260EA35E008BCD78 /* DocParse.swift */,
+			);
+			path = "Document Parsing";
+			sourceTree = "<group>";
+		};
+		37CF6E202644A01F00DB7447 /* MerriamWebster */ = {
+			isa = PBXGroup;
+			children = (
+				37CF6E442645C6F400DB7447 /* MWEntry.swift */,
+				37CF6E242644A0B500DB7447 /* MWWordFetch.swift */,
+			);
+			path = MerriamWebster;
+			sourceTree = "<group>";
+		};
+		37CF6E212644A03200DB7447 /* OxfordEnglishDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				37CF6E1B26446A6000DB7447 /* OEDWordFetch.swift */,
+				377EDD45264C47B80094D637 /* Language.swift */,
+			);
+			path = OxfordEnglishDictionary;
+			sourceTree = "<group>";
+		};
+		37CF6E222644A04900DB7447 /* DataFetching */ = {
+			isa = PBXGroup;
+			children = (
+				37CF6E2F2644ABB600DB7447 /* MainWordFetch.swift */,
+				37CF6E382645BB6800DB7447 /* DataSources.swift */,
+				37CF6E332644AEBA00DB7447 /* WordFetcher.swift */,
+				37CF6E212644A03200DB7447 /* OxfordEnglishDictionary */,
+				37CF6E202644A01F00DB7447 /* MerriamWebster */,
+			);
+			path = DataFetching;
+			sourceTree = "<group>";
+		};
+		37ECC2A62648C6E5008FB1C0 /* TyperaTests */ = {
+			isa = PBXGroup;
+			children = (
+				37ECC2A72648C6E5008FB1C0 /* TyperaTests.swift */,
+				37ECC2A92648C6E5008FB1C0 /* Info.plist */,
+			);
+			path = TyperaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		375C58BE260E9FEC00A0865A /* Typera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375C58CF260E9FEE00A0865A /* Build configuration list for PBXNativeTarget "Typera" */;
+			buildPhases = (
+				375C58BB260E9FEC00A0865A /* Sources */,
+				375C58BC260E9FEC00A0865A /* Frameworks */,
+				375C58BD260E9FEC00A0865A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Typera;
+			productName = Typera;
+			productReference = 375C58BF260E9FEC00A0865A /* Typera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37ECC2A42648C6E5008FB1C0 /* TyperaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37ECC2AC2648C6E5008FB1C0 /* Build configuration list for PBXNativeTarget "TyperaTests" */;
+			buildPhases = (
+				37ECC2A12648C6E5008FB1C0 /* Sources */,
+				37ECC2A22648C6E5008FB1C0 /* Frameworks */,
+				37ECC2A32648C6E5008FB1C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37ECC2AB2648C6E5008FB1C0 /* PBXTargetDependency */,
+			);
+			name = TyperaTests;
+			productName = TyperaTests;
+			productReference = 37ECC2A52648C6E5008FB1C0 /* TyperaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		375C58B7260E9FEC00A0865A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					375C58BE260E9FEC00A0865A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					37ECC2A42648C6E5008FB1C0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 375C58BE260E9FEC00A0865A;
+					};
+				};
+			};
+			buildConfigurationList = 375C58BA260E9FEC00A0865A /* Build configuration list for PBXProject "Typera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 375C58B6260E9FEC00A0865A;
+			productRefGroup = 375C58C0260E9FEC00A0865A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				375C58BE260E9FEC00A0865A /* Typera */,
+				37ECC2A42648C6E5008FB1C0 /* TyperaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		375C58BD260E9FEC00A0865A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375C58CA260E9FEE00A0865A /* Preview Assets.xcassets in Resources */,
+				375C58C7260E9FEE00A0865A /* Assets.xcassets in Resources */,
+				3787B3F026DE8778007F5162 /* testdata.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37ECC2A32648C6E5008FB1C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		375C58BB260E9FEC00A0865A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CF6E1C26446A6000DB7447 /* OEDWordFetch.swift in Sources */,
+				375C58C5260E9FEC00A0865A /* ContentView.swift in Sources */,
+				375C58C3260E9FEC00A0865A /* TyperaApp.swift in Sources */,
+				37CF6E392645BB6800DB7447 /* DataSources.swift in Sources */,
+				37B704D5260EA35E008BCD78 /* DocParse.swift in Sources */,
+				37CF6E452645C6F400DB7447 /* MWEntry.swift in Sources */,
+				37CF6E252644A0B600DB7447 /* MWWordFetch.swift in Sources */,
+				37B704D2260EA22F008BCD78 /* Word.swift in Sources */,
+				37CF6E342644AEBA00DB7447 /* WordFetcher.swift in Sources */,
+				37CF6E302644ABB600DB7447 /* MainWordFetch.swift in Sources */,
+				377EDD46264C47B80094D637 /* Language.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37ECC2A12648C6E5008FB1C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37ECC2A82648C6E5008FB1C0 /* TyperaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37ECC2AB2648C6E5008FB1C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 375C58BE260E9FEC00A0865A /* Typera */;
+			targetProxy = 37ECC2AA2648C6E5008FB1C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		375C58CD260E9FEE00A0865A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		375C58CE260E9FEE00A0865A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		375C58D0260E9FEE00A0865A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Typera/Typera.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Typera/Preview Content\"";
+				DEVELOPMENT_TEAM = 87J8CA9D99;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Typera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hunter.Holland.Typera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		375C58D1260E9FEE00A0865A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Typera/Typera.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Typera/Preview Content\"";
+				DEVELOPMENT_TEAM = 87J8CA9D99;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Typera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hunter.Holland.Typera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		37ECC2AD2648C6E5008FB1C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 87J8CA9D99;
+				INFOPLIST_FILE = TyperaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hunter.Holland.TyperaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Typera.app/Contents/MacOS/Typera";
+			};
+			name = Debug;
+		};
+		37ECC2AE2648C6E5008FB1C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 87J8CA9D99;
+				INFOPLIST_FILE = TyperaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hunter.Holland.TyperaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Typera.app/Contents/MacOS/Typera";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		375C58BA260E9FEC00A0865A /* Build configuration list for PBXProject "Typera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375C58CD260E9FEE00A0865A /* Debug */,
+				375C58CE260E9FEE00A0865A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375C58CF260E9FEE00A0865A /* Build configuration list for PBXNativeTarget "Typera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375C58D0260E9FEE00A0865A /* Debug */,
+				375C58D1260E9FEE00A0865A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37ECC2AC2648C6E5008FB1C0 /* Build configuration list for PBXNativeTarget "TyperaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37ECC2AD2648C6E5008FB1C0 /* Debug */,
+				37ECC2AE2648C6E5008FB1C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 375C58B7260E9FEC00A0865A /* Project object */;
+}
