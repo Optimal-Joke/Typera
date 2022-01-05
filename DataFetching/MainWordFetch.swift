@@ -5,25 +5,19 @@
 //  Created by Hunter Holland on 5/6/21.
 //
 
-import Foundation
+// MARK: - Word
+public protocol Word {
+    var headword: String { get }
+}
 
-struct Word {
-    var headword: String
-    
-    let source: DataSource
-    let fetcher: WordFetcher
-    
-    init(_ word: String, using dataSource: DataSource, fetchData: Bool = true) {
-        self.headword = word
-        self.source = dataSource
-        
-        switch dataSource {
-        case .OxfordEnglishDictionary:
-            self.fetcher = OEDWordFetcher(word, fetchData: fetchData)
-        case .MerriamWebster:
-            self.fetcher = MWWordFetcher(word, fetchData: fetchData)
-        }
-    }
+// MARK: OED
+public struct OEDWord: Word {
+    public var headword: String
+}
+
+// MARK: MW
+public struct MWWord: Word {
+    public var headword: String
 }
 
 //Word("wonder", using: .OxfordEnglishDictionary)

@@ -9,12 +9,7 @@ import Foundation
 
 struct Language {
     var code: String
-    init?(code: String) {
-        if code.hasPrefix("en-") {
-            self.code = code
-        } else {
-            print("Sorry, only English variants are supported." )
-            return nil
-        }
+    init(code: String) {
+        self.code = code
     }
 }

@@ -20,7 +20,7 @@ struct MWEntry: Codable {
     var sls: [SubjectStatusLabel]
     var ins: [Inflection]
     var cxs: CognateCrossReferences
-    var def: [DefinitionSectionObject]
+//    var def: [DefinitionSectionObject]
 }
 
 /// Information about an entry, as opposed to the actual content of the entry.
@@ -160,7 +160,7 @@ struct CognateCrossReferenceTarget: Codable {
 }
 
 // MARK: - Definition Section
-protocol DefinitionSectionObject: Codable { }
+//protocol DefinitionSectionObject: Codable { }
 
 typealias VerbDivider = String
 /// The text of the definition or translation for a particular sense. Defining text is contained in `dt`.
